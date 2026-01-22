@@ -42,11 +42,4 @@ This project is ideal for beginners and can be used as a portfolio project to de
 
 ---
 
-### Installation
-
-1️⃣ Clone the repository
-```bash
-git clone https://github.com/your-username/adding-blog.git
-
-## 📂 Project Structure
 
