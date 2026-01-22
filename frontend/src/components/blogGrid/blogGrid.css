@@ -1,0 +1,107 @@
+.blog-grid {
+  padding: 30px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 4rem;
+  background: #fafafa;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  color: #332b2b;
+}
+
+.card-header img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 0.4rem;
+  display: inline-block;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.card-body h4 {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.8rem 0;
+}
+
+.read-more {
+  color: #36656B;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.read-more:hover {
+    color: #000;
+}
+/* Header colors */
+.green { background: #eaf3e0; }
+.purple { background: #efe6f6; }
+.blue { background: #e7effa; }
+.teal { background: #e4f4f1; }
+.yellow { background: #f7f2de; }
+.mint { background: #e6f3f0; }
+
+/* Pagination */
+.pagination {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination span,
+.pagination button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  color: #36656B;
+}
+
+.pagination .active {
+  background: #36656B;
+  color: white;
+  border: none;
+}

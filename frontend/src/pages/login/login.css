@@ -1,0 +1,190 @@
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/best-fruits.webp'); /* Add background illustration image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+  
+  .login-card {
+    background-color: white;
+    padding: 40px 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .login-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .forgot-password {
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+  }
+  .forgot-password:hover{
+    color: black;
+  }
+  .login-button {
+    width: 100%;
+    background-color: #fc5d35;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  .login-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .signup-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fc5d35;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+    color: black;
+
+  }
+  
+  .signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/best-fruits.webp');/* Optional background illustration */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+  .forgot-password1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/best-fruits.webp');/* Optional background illustration */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 200px;
+  }
+  .forgot-password2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/best-fruits.webp');/* Optional background illustration */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 180px;
+    padding-bottom: 180px;
+   
+  }
+  
+  .signup-card {
+    background-color: white;
+    padding: 40px 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .signup-form{
+    padding: 0px;
+  }
+  
+  .signup-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .signup-button {
+    width: 100%;
+    background-color: #fc5d35;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .signup-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .login-redirect {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .login-redirect a {
+    color: #fc5d35;
+    text-decoration: none;
+  }
+  
+  .login-redirect a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  

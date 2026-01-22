@@ -1,0 +1,170 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.heroSectionFrame9 {
+  width: 100%;
+  min-height: 300px;
+  padding: 0px 0px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #36656B;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+.blogs-title {
+  font-size: 2rem;
+  color:#36656B;
+  text-align: start;
+}
+.blogs{
+  padding: 10px 100px;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.communicateCollaborateCreaContainerhome {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 100px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.communicate {
+  margin: 0;
+  color: #fff;
+}
+
+.collaborate {
+  margin: 0;
+  color: #fff;
+}
+
+.empoweringYourBusinessContainerhome {
+  max-width: 715px;
+  font-size: 20px;
+  padding: 0 100px;
+
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.yourBusinessWith {
+  color: #fff;
+  margin-left: 0px;
+  margin-right: 5px;
+}
+
+
+
+/* ===== Tablets (768px - 1024px) ===== */
+@media (max-width: 1024px) {
+  .heroSectionFrame9 {
+    padding: 100px 40px;
+  }
+
+  .communicateCollaborateCreaContainerhome {
+    font-size: 38px;
+    line-height: 1.3;
+  }
+
+  .empoweringYourBusinessContainerhome {
+    font-size: 26px;
+    max-width: 600px;
+  }
+
+  .buttonFullWidthDefault1 {
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+  }
+}
+
+/* ===== Mobile (≤768px) ===== */
+@media (max-width: 768px) {
+  .heroSectionFrame9 {
+    padding: 100px 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .communicateCollaborateCreaContainerhome {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .empoweringYourBusinessContainerhome {
+    max-width: 100%;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  .yourBusinessWith {
+    display: inline;
+    margin: 0;
+  }
+
+  
+}
+
+/* ===== Small Phones (≤480px) ===== */
+@media (max-width: 480px) {
+  .heroSectionFrame9 {
+    padding: 80px 15px;
+  }
+
+  .communicateCollaborateCreaContainerhome {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    gap: 2px;
+  }
+
+  .empoweringYourBusinessContainerhome {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+ 
+}
+
+/* ===== Very Small Screens (≤360px) ===== */
+@media (max-width: 360px) {
+  .heroSectionFrame9 {
+    padding: 80px 10px;
+  }
+
+  .communicateCollaborateCreaContainerhome {
+    font-size: 30px;
+  }
+
+  .empoweringYourBusinessContainerhome {
+    font-size: 18px;
+  }
+
+ 
+}
