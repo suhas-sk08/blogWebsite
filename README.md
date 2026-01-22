@@ -5,14 +5,6 @@ This project is ideal for beginners and can be used as a portfolio project to de
 
 ---
 
-## 🌐 Live Demo
-🔗 https://your-live-demo-link.com
-
----
-
-## 📸 Preview
-![Adding Blog Preview](assets/images/preview.png)
-
 ---
 
 ## 📌 Features
@@ -38,8 +30,6 @@ This project is ideal for beginners and can be used as a portfolio project to de
 - Node.js
 - Express.js
  MongoDB / Local Storage
-
----
 
 ---
 
