@@ -59,7 +59,7 @@ const NavBarFrame = () => {
 
         <li>
           <NavLink
-            to="/blogs"
+            to="/add-blog"
             className="nav-item"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -69,7 +69,7 @@ const NavBarFrame = () => {
         
          <li>
           <NavLink
-            to="/blogs"
+            to="/profile"
             className="nav-item"
             onClick={() => setIsMenuOpen(false)}
           >

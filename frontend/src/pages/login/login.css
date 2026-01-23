@@ -1,190 +1,272 @@
-  .login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/best-fruits.webp'); /* Add background illustration image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 60px;
-    padding-bottom: 120px;
-  }
-  
-  .login-card {
-    background-color: white;
-    padding: 40px 30px;
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: relative;
-  }
-  
-  .login-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .login-subtitle {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .error {
-    color: red;
-    font-size: 12px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .forgot-password {
-    font-size: 12px;
-    color: #777;
-    text-decoration: none;
-  }
-  .forgot-password:hover{
-    color: black;
-  }
-  .login-button {
-    width: 100%;
-    background-color: #fc5d35;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 15px;
-  }
-  .login-button:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  .signup-link {
-    display: block;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #fc5d35;
-    text-decoration: none;
-  }
-  
-  .signup-link:hover {
-    text-decoration: underline;
-    color: black;
+.signin-section {
+  background: #36656B;
+  padding: 120px 0;
+  min-height: 50vh;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  }
-  
-  .signup-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/best-fruits.webp');/* Optional background illustration */
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 60px;
-    padding-bottom: 120px;
-  }
-  .forgot-password1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/best-fruits.webp');/* Optional background illustration */
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 60px;
-    padding-bottom: 200px;
-  }
-  .forgot-password2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/best-fruits.webp');/* Optional background illustration */
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 180px;
-    padding-bottom: 180px;
-   
-  }
-  
-  .signup-card {
-    background-color: white;
-    padding: 40px 30px;
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  .signup-form{
-    padding: 0px;
-  }
-  
-  .signup-title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .signup-subtitle {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .error {
-    color: red;
-    font-size: 12px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  .signup-button {
-    width: 100%;
-    background-color: #fc5d35;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 15px;
-  }
-  
-  .signup-button:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  
-  .login-redirect {
-    font-size: 14px;
-    color: #777;
-    margin-top: 20px;
-  }
-  
-  .login-redirect a {
-    color: #fc5d35;
-    text-decoration: none;
-  }
-  
-  .login-redirect a:hover {
-    text-decoration: underline;
-    color: black;
-  }
-  
+.signin-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.signin-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.signin-card {
+  max-width: 525px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.logo-wrapper img {
+  max-width: 160px;
+  margin: 0 auto 40px;
+}
+
+.input-box {
+  margin-bottom: 24px;
+  padding: 0 50px;
+  padding-right: 100px;
+  background-color: #fff;
+}
+.input-box input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #ffffff;        
+  color: #36656B;          
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-box input:focus {
+  border-color: #36656B;
+  box-shadow: 0 0 0 2px rgba(54, 101, 107, 0.2); 
+  background: #ffffff;
+}
+
+.input-box input::placeholder {
+  color: #9ca3af;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111827;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.submit-wrapper {
+  margin-bottom: 40px;
+}
+
+.signin-btn {
+  width: 50%;
+  background: #36656B;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-btn:hover {
+  opacity: 0.9;
+}
+
+.social-text {
+  margin-bottom: 16px;
+  color: #6b7280;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  flex: 1;
+  margin: 0 6px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.facebook {
+  background: #4064ac;
+}
+
+.twitter {
+  background: #1c9cea;
+}
+
+.google {
+  background: #d64937;
+}
+
+.forgot-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  color: #36656B;
+  text-decoration: underline;
+}
+
+.signup-text {
+  color: #6b7280;
+}
+
+.signup-text a {
+  color: #36656B;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+.input-label {
+  display: block;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  resize: vertical;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+.textarea:focus {
+  border-color: #36656B;
+}
+.profile-card {
+  text-align: left;
+}
+
+.profile-box {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+.profile-section h3 {
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.blog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #111827;
+}
+
+.blog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.blog-title {
+  font-weight: 600;
+}
+
+.blog-date {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+.profile-actions {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.logout-btn {
+  background: #111827;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+.danger-zone {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 40px;
+  padding-top: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+.delete-account-btn {
+  background: #b91c1c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.empty-text {
+  color: #6b7280;
+  font-size: 14px;
+}

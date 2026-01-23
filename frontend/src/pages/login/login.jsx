@@ -1,89 +1,50 @@
-import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { useFormik } from "formik";
-import * as yup from "yup";
-import { useSelector } from "react-redux";
+import React from "react";
+import "./login.css";
 
-const loginSchema = yup.object({
-  email: yup.string().required("Email is Required").email("Email should be valid"),
-  password: yup.string().required("Password is Required"),
-});
-
-const Login = () => {
-  const authState = useSelector((state) => state.auth || {});
-  const navigate = useNavigate();
-  const [error, setError] = useState("");
-
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-      password: "",
-    },
-    validationSchema: loginSchema,
-    onSubmit: async (values) => {
-      try {
-       
-        navigate("/"); 
-      } catch (error) {
-        setError("Failed to log in. Please check your credentials.");
-      }
-    },
-  });
-
-  useEffect(() => {
-    
-      navigate("/");
-    
-  }, [authState, navigate]);
-
+const Signin = () => {
   return (
-    <div className="login-page">
-      <div className="login-card">
-        <h2 className="login-title">Login to account</h2>
-        <p className="login-subtitle">
-          Access the most powerful tool in the entire design and web industry.
-        </p>
-        <form onSubmit={formik.handleSubmit} className="login-form">
-          <input
-            type="email"
-            name="email"
-            placeholder="E-mail Address"
-            value={formik.values.email}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            className="input-field"
-          />
-          <div className="error">
-            {formik.touched.email && formik.errors.email}
+    <section className="signin-section">
+      <div className="signin-container">
+        <div className="signin-wrapper">
+          <div className="signin-card">
+            <div className="logo-wrapper">
+              <img
+                src="/vite.svg"
+                alt="logo"
+              />
+            </div>
+
+            <form>
+              <InputBox type="email" name="email" placeholder="Email" />
+              <InputBox type="password" name="password" placeholder="Password" />
+
+              <div className="submit-wrapper">
+                <input type="submit" value="Sign In" className="signin-btn" />
+              </div>
+            </form>
+
+           
+
+            <a href="/forgot-password" className="forgot-link">
+              Forget Password?
+            </a>
+
+            <p className="signup-text">
+              Not a member yet? <a href="/signup">Sign Up</a>
+            </p>
           </div>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formik.values.password}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            className="input-field"
-          />
-          <div className="error">
-            {formik.touched.password && formik.errors.password}
-          </div>
-          {error && <div className="error">{error}</div>}
-          <div className="options">
-            <Link to="/forgot-password" className="forgot-password">
-              Forgot password?
-            </Link>
-          </div>
-          <button type="submit" className="login-button">
-            Login
-          </button>
-          <Link to="/signup" className="signup-link">
-            Register new account
-          </Link>
-        </form>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Login;
+export default Signin;
+
+const InputBox = ({ type, placeholder, name }) => {
+  return (
+    <div className="input-box">
+      <input type={type} placeholder={placeholder} name={name} />
+    </div>
+  );
+};
