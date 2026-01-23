@@ -22,7 +22,7 @@ export default function Home() {
 
             <div className="empoweringYourBusinessContainerhome">
                 <span className="yourBusinessWith">
-                A blog about design, development, data, and growth — sharing practical insights, tutorials, and lessons from building in public.
+                A blog about design, development, data, and growth — sharing practical insights, tutorials, and lessons from building in public
                 </span>
                 <span className="yourBusinessWith">.</span>
             </div>
