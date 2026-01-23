@@ -1,4 +1,3 @@
-<img width="1896" height="844" alt="image" src="https://github.com/user-attachments/assets/10596e45-88dd-4745-81b7-31a5e0d738a8" />
 # Adding Blog 📝
 
 Adding Blog is a simple, responsive blog website that allows users to add, view, and manage blog posts easily.  
@@ -8,7 +7,8 @@ This project is ideal for beginners and can be used as a portfolio project to de
 
 ## 📸 Project Preview
 
-![Adding Blog Screenshot](assets/hero.png)
+<img width="1896" height="844" alt="image" src="https://github.com/user-attachments/assets/10596e45-88dd-4745-81b7-31a5e0d738a8" />
+
 <!-- Replace the path with your actual image path -->
 
 ---
