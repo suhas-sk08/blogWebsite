@@ -1,9 +1,16 @@
+<img width="1896" height="844" alt="image" src="https://github.com/user-attachments/assets/10596e45-88dd-4745-81b7-31a5e0d738a8" />
 # Adding Blog 📝
 
 Adding Blog is a simple, responsive blog website that allows users to add, view, and manage blog posts easily.  
 This project is ideal for beginners and can be used as a portfolio project to demonstrate web development skills.
 
 ---
+
+## 📸 Project Preview
+
+![Adding Blog Screenshot](assets/hero.png)
+![Adding Blog Screenshot](assets/blogs.png)
+<!-- Replace the path with your actual image path -->
 
 ---
 
@@ -22,14 +29,15 @@ This project is ideal for beginners and can be used as a portfolio project to de
 ## 🛠️ Tech Stack
 
 ### Frontend
-- HTML5
-- CSS3
-- JavaScript (ES6)
+- HTML5  
+- CSS3  
+- JavaScript (ES6)  
 
-### Backend 
-- Node.js
-- Express.js
- MongoDB / Local Storage
+### Backend
+- Firebase  
+
+### Database
+- Firestore
 
 ---
 
@@ -42,4 +50,8 @@ This project is ideal for beginners and can be used as a portfolio project to de
 
 ---
 
+### Installation
 
+```bash
+git clone https://github.com/your-username/adding-blog.git
+cd adding-blog
