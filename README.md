@@ -9,7 +9,6 @@ This project is ideal for beginners and can be used as a portfolio project to de
 ## 📸 Project Preview
 
 ![Adding Blog Screenshot](assets/hero.png)
-![Adding Blog Screenshot](assets/blogs.png)
 <!-- Replace the path with your actual image path -->
 
 ---
@@ -53,5 +52,5 @@ This project is ideal for beginners and can be used as a portfolio project to de
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/adding-blog.git
+git clone https://github.com/suhas-sk08/blogWebsite.git
 cd adding-blog
