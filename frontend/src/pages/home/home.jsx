@@ -29,7 +29,6 @@ export default function Home() {
 
             </div>
             <div>
-         <UpcomingSection/>
       </div>
       <div className="blogs">
         <h2 className="blogs-title">Blogs</h2>

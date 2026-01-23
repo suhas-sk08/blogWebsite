@@ -1,15 +1,27 @@
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
+import { auth } from "../../config/firebase";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 
 const NavBarFrame = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [user, setUser] = useState(null);
   const menuRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
   }, [isMenuOpen]);
+
+  // 🔥 Auth listener
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -24,16 +36,28 @@ const NavBarFrame = () => {
       document.removeEventListener("mousedown", handleClickOutside);
   }, [isMenuOpen]);
 
+  // 🔐 Protect Add Blog
+  const handleAddBlogClick = (e) => {
+    if (!user) {
+      e.preventDefault();
+      navigate("/login");
+    }
+    setIsMenuOpen(false);
+  };
+
+  // 🚪 Logout
+  const handleLogout = async () => {
+    await signOut(auth);
+    setIsMenuOpen(false);
+    navigate("/");
+  };
+
   return (
     <nav className="navbar">
       {/* Logo */}
       <div className="navbar-logo">
         <NavLink to="/">
-          <img
-            src="/vite.svg"
-            alt="logo"
-            className="logo-img-header"
-          />
+          <img src="/vite.svg" alt="logo" className="logo-img-header" />
         </NavLink>
       </div>
 
@@ -48,11 +72,7 @@ const NavBarFrame = () => {
       {/* Navigation */}
       <ul ref={menuRef} className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <NavLink
-            to="/"
-            className="nav-item"
-            onClick={() => setIsMenuOpen(false)}
-          >
+          <NavLink to="/" className="nav-item" onClick={() => setIsMenuOpen(false)}>
             Home
           </NavLink>
         </li>
@@ -61,41 +81,42 @@ const NavBarFrame = () => {
           <NavLink
             to="/add-blog"
             className="nav-item"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={handleAddBlogClick}
           >
-           Add Blogs
-          </NavLink>
-        </li>
-        
-         <li>
-          <NavLink
-            to="/profile"
-            className="nav-item"
-            onClick={() => setIsMenuOpen(false)}
-          >
-           Profile
+            Add Blog
           </NavLink>
         </li>
 
-       
+        {user && (
+          <li>
+            <NavLink
+              to="/profile"
+              className="nav-item"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Profile
+            </NavLink>
+          </li>
+        )}
       </ul>
-      <ul>
-         <li className="auth-buttons">
-          <NavLink
-            to="/login"
-            className="login-btn"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Login
-          </NavLink>
 
-          <NavLink
-            to="/signup"
-            className="signup-btn"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Sign Up
-          </NavLink>
+      {/* Auth buttons */}
+      <ul>
+        <li className="auth-buttons">
+          {!user ? (
+            <>
+              <NavLink to="/login" className="login-btn">
+                Login
+              </NavLink>
+              <NavLink to="/signup" className="signup-btn">
+                Sign Up
+              </NavLink>
+            </>
+          ) : (
+            <button className="logout1-btn1" onClick={handleLogout}>
+              Logout
+            </button>
+          )}
         </li>
       </ul>
     </nav>

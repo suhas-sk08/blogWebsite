@@ -110,6 +110,23 @@
   width: 100%;
   background-color: #36656B;
 }
+.logout1-btn1 {
+ padding: 8px 18px;
+  border: 1px solid #36656B;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: #36656B;
+}
+
+.logout1-btn1:hover {
+  background-color: #fff;
+  color: #36656B;
+  border-color: #36656B;
+}
+
+
 
 /* Arrow icon */
 .arrow-icon {

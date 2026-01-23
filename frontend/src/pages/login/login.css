@@ -15,6 +15,17 @@
   display: flex;
   justify-content: center;
 }
+.error {
+  color: #dc2626;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.success {
+  color: #16a34a;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
 
 .signin-card {
   max-width: 525px;
@@ -170,6 +181,7 @@ input:-webkit-autofill:focus {
   resize: vertical;
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
+  color: #000;
 }
 
 .textarea:focus {
