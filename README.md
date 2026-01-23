@@ -5,6 +5,12 @@ This project is ideal for beginners and can be used as a portfolio project to de
 
 ---
 
+## 📸 Project Preview
+
+<img width="1896" height="844" alt="image" src="https://github.com/user-attachments/assets/10596e45-88dd-4745-81b7-31a5e0d738a8" />
+
+<!-- Replace the path with your actual image path -->
+
 ---
 
 ## 📌 Features
@@ -22,14 +28,15 @@ This project is ideal for beginners and can be used as a portfolio project to de
 ## 🛠️ Tech Stack
 
 ### Frontend
-- HTML5
-- CSS3
-- JavaScript (ES6)
+- HTML5  
+- CSS3  
+- JavaScript (ES6)  
 
-### Backend 
-- Node.js
-- Express.js
- MongoDB / Local Storage
+### Backend
+- Firebase  
+
+### Database
+- Firestore
 
 ---
 
@@ -42,4 +49,8 @@ This project is ideal for beginners and can be used as a portfolio project to de
 
 ---
 
+### Installation
 
+```bash
+git clone https://github.com/suhas-sk08/blogWebsite.git
+cd adding-blog
